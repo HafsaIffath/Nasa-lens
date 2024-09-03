@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-family: Dancing Script, sans-serif;
+}
+
+/*  Video */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navbar {
+  height: 3.5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.395);
+  padding: 0.6rem;
+}
+
+.navbar img {
+  height: 2rem;
+}
+
+.logo {
+  font-family: Dancing Script, sans-serif;
+  color: #34c5ee;
+  letter-spacing: 0.15rem;
+  font-weight: 800;
+}
+
+.logo:hover {
+  letter-spacing: 0.2rem;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  font-family: roboto, sans-serif;
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+}
+
+.content {
+  font-size: large;
+}
+
+/* btns */
+button {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 600 !important;
+  margin-right: 10px;
+  font-family: poppins, sans-serif !important;
+  opacity: 0.8 !important;
+}
+
+button:hover {
+  box-shadow: 7px 5px rgba(0, 0, 0, 0.505);
+  opacity: 1 !important;
+}
+
+.log {
+  color: #0e0d0d;
+}
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: poppins, system-ui;
+  color: #be36a3;
+  font-weight: 600;
+  font-size: large;
+}
