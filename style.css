@@ -6,6 +6,10 @@ html {
   font-family: Dancing Script, sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 /*  Video */
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -21,6 +25,7 @@ html {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.395);
   padding: 0.6rem;
+  position: fixed;
 }
 
 .navbar img {
@@ -42,11 +47,9 @@ html {
   position: absolute;
   top: 25%;
   bottom: 0;
-  left: 25%;
   right: 0;
   font-family: roboto, sans-serif;
-  height: 80vh;
-  width: 80vw;
+
   margin: auto;
 
   justify-content: center;
@@ -83,4 +86,22 @@ h6 {
   color: #be36a3;
   font-weight: 600;
   font-size: large;
+}
+
+/* Error Page */
+
+.errorBox {
+  border: 2px solid black;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.err {
+  display: flex;
+}
+.err img {
+  height: 300px;
+  width: 150px;
 }
