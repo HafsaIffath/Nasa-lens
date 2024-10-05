@@ -134,7 +134,11 @@ label {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 7.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  
 }
 
 /* Headings */
@@ -160,16 +164,16 @@ a:hover {
 }
 
 /* Logic for hiding specific buttons on the respective pages */
-.page-signup .navbar a[href='signup.html'] {
+.page-signup .navbar a[href="signup.html"] {
   display: none;
 }
 
-.page-login .navbar a[href='index.html'] {
+.page-login .navbar a[href="index.html"] {
   display: none;
 }
 
 /* Reset link styling */
-a[href^='#']:hover {
+a[href^="#"]:hover {
   text-decoration: underline;
   color: #fff;
 }

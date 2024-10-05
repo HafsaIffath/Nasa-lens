@@ -24,6 +24,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  /* opacity: 0.5; */
 }
 
 /* Navbar styling */
@@ -47,7 +48,7 @@ body {
 }
 
 .logo {
-  font-family: 'Dancing Script', sans-serif;
+  font-family: "Dancing Script", sans-serif;
   color: #34c5ee;
   letter-spacing: 0.15rem;
   font-weight: 800;
@@ -61,7 +62,6 @@ body {
 
 /* Navbar buttons alignment */
 .navbar-right {
-  
   display: flex;
   gap: 10px;
   margin: 0 auto;
@@ -70,7 +70,7 @@ body {
   justify-content: center;
 }
 
-.navbar-right a{
+.navbar-right a {
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
@@ -78,11 +78,9 @@ body {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.navbar-right a:hover{
+.navbar-right a:hover {
   color: #ffffff;
-  
 }
-  
 
 .logout-button {
   margin-left: auto;
@@ -94,9 +92,9 @@ body {
   background-color: #34c5ee;
   border: none;
   cursor: pointer;
-  
-   /* Rounded corners */
-  
+
+  /* Rounded corners */
+
   display: flex; /* Use flexbox */
   justify-content: center; /* Center text horizontally */
   align-items: center; /* Center text vertically */
@@ -106,8 +104,6 @@ body {
 .logout-button a {
   text-decoration: none; /* Remove underline from any anchor tags */
 }
-
-
 
 /* Button styling */
 button {
@@ -247,7 +243,6 @@ button:hover {
   margin-top: 10px; /* Adds some space above the clickable text */
 }
 
-
 /* Save Text (Add/Remove to/from favorites) */
 .clickable {
   color: dodgerblue;
@@ -312,18 +307,15 @@ button:hover {
   justify-content: center; /* Center text horizontally */
   align-items: center; /* Center text vertically */
   text-decoration: none;
-  color : black;
+  color: black;
   border-radius: 5px; /* Same rounded corners */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.505);
   transition: background-color 0.3s ease;
 }
 
 #loadMoreBtn:hover {
-  background-color:#29a0b8 ;
+  background-color: #29a0b8;
 }
-
-
-
 
 /* Large Smartphone (Vertical) */
 @media screen and (max-width: 800px) {

@@ -12,7 +12,8 @@ html {
   display: flex;
   direction: rtl;
   /* Reverse the order of stars */
-  justify-content: center; /* Centers the stars horizontally */
+  /*  Centers the stars horizontally */
+  justify-content: end;
   align-items: center;
   font-size: 30px;
   text-align: left;
@@ -171,7 +172,7 @@ label {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin-top: 3rem;
-  height:70%;
+  /* height:70%; */
 }
 .i{
   color: #eeb712;
