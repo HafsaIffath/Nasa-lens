@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback form - NASA's Lens</title>
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+
+</head>
+
+<body class="page-Feedback">
+  <video autoplay muted loop id="myVideo">
+    <source src="/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="">
+      NASA's Lens
+    </div>
+    <div class="navbar-right">
+      <a href="signup.html"><button>Logout</button></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Feedback</h2>
+    <form id="Feedback form">
+      <label for="Name">Name</label>
+      <input type="Name" id="Name" name="Name" placeholder="Enter your name" required>
+      <span id="email-error" class="error-message"></span>
+
+      <label for="Email">Email</label>
+      <input type="Email" id="Email" name="Email" placeholder="Enter your mail id" required>
+      <span id="error" class="error-message"></span>
+      <label for="rating">Rating </label>
+      <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">★</label>
+
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+      </div>
+      <!-- Comment Box Below Rating -->
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..." required></textarea>
+
+      <button type="submit">Submit</button>
+
+
+    </form>
+  </div>
+
+  <i class="fa fa-star-o" aria-hidden="true"></i>
+</body>
+
+</html>

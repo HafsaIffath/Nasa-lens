@@ -1,0 +1,202 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 2.5rem 0 0 0; /* Top padding to prevent content from hiding behind the fixed navbar */
+    font-family: Poppins, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    height: 2.5rem; /* Adjusted height for a slimmer navbar */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 0.4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* Ensures navbar stays above other elements */
+}
+
+.navbar img {
+    height: 1.5rem; /* Consistent logo height */
+    margin-right: 0.5rem;
+}
+
+.logo {
+    font-family: Dancing Script, sans-serif;
+    color: #34c5ee;
+    letter-spacing: 0.15rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    letter-spacing: 0.2rem; /* Slight increase in letter spacing on hover */
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-right: 30px; /* Space between buttons and right edge */
+}
+/* Background video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+button {
+    color: #fff; /* White text color */
+    background-color: #31afd2; /* Button background color */
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.505); /* Subtle shadow */
+    opacity: 0.8;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    height: 35px;
+}
+
+button:hover {
+    background-color: #29a0b8; /* Darker shade on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+    opacity: 1;
+}
+
+/* Gallery Container */
+.gallery-container {
+    max-width: 1200px; /* Maximum width of the gallery */
+    margin: 50px auto; /* Centers the container and adds top margin */
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container h2 {
+    font-family: Dancing Script, sans-serif;
+    color: #34c5ee;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    grid-gap: 15px; /* Space between grid items */
+}
+
+/* Gallery Items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100; /* Sits above all other content */
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enables scrolling if content is larger than viewport */
+    background-color: rgba(0,0,0,0.9); /* Dark background with opacity */
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb; /* Change color on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .navbar-right {
+        margin-right: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .gallery-container h2 {
+        font-size: 2rem; /* Smaller heading on small devices */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Fewer columns on small devices */
+    }
+
+    .close {
+        top: 15px;
+        right: 25px;
+        font-size: 35px;
+    }
+}

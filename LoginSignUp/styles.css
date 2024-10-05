@@ -1,0 +1,175 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global font for the page */
+html {
+  font-family: Dancing Script, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  background: transparent;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Navbar styling */
+.navbar {
+  height: 2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.395);
+  padding: 0.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Navbar image/logo styling */
+.navbar img {
+  height: 2rem; /* Set the height to ensure consistency */
+}
+
+.logo {
+  font-family: Dancing Script, sans-serif;
+  color: #34c5ee;
+  letter-spacing: 0.15rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* Navbar buttons alignment */
+.navbar-right {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-right: 30px; /* More space between the buttons and the right edge */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: #31afd2;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.505);
+  opacity: 0.8;
+  transition: background-color 0.3s ease;
+  height: 30px;
+}
+
+button:hover {
+  background-color: #29a0b8; /* Change button color on hover */
+  box-shadow: 7px 5px rgba(0, 0, 0, 0.505);
+  opacity: 1;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Proper label alignment */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: left;
+}
+
+/* Error message styling */
+.error-message {
+  font-size: 0.6rem; /* Small font size */
+  color: red;
+  text-align: left; /* Left-align the error message */
+  display: block; /* Ensure it is displayed as a block */
+  margin-top: -10px; /* Adjust to ensure the spacing is consistent */
+  margin-bottom: 10px; /* Ensure space below the error */
+}
+
+/* Container styling */
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  min-width: 300px; /* Set minimum width to ensure consistency */
+  max-width: 400px; /* Set a fixed max-width to maintain consistency */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 20rem;
+}
+
+/* Headings */
+h2 {
+  color: #34c5ee;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* Link styling */
+a {
+  color: #34c5ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Logic for hiding specific buttons on the respective pages */
+.page-signup .navbar a[href='signup.html'] {
+  display: none;
+}
+
+.page-login .navbar a[href='index.html'] {
+  display: none;
+}
+
+/* Reset link styling */
+a[href^='#']:hover {
+  text-decoration: underline;
+  color: #fff;
+}

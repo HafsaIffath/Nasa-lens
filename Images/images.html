@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="images.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+
+
+</head>
+
+<body class="page-Gallery">
+  <video autoplay muted loop id="myVideo">
+    <source src="/bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="NASA's Lens Logo">
+      NASA's Lens
+    </div>
+    <div class="navbar-right">
+
+      <a href="signup.html"><button>Logout</button></a>
+    </div>
+  </div>
+
+  <!-- Image Gallery Container -->
+  <div class="gallery-container">
+    <h2> Image Gallery</h2>
+    <div class="gallery">
+      <!-- Repeat this block for each image -->
+      <div class="gallery-item">
+        <img src="image.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image2.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image3.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image4.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image5.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image6.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image7.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image8.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image9.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="image10.jpeg">
+      </div>
+      <div class="gallery-item">
+        <img src="images/image1.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="images/image1.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="images/image1.jpg">
+      </div>
+
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <!-- Optional: Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Optional: Include JavaScript for Lightbox Functionality -->
+  <script src="gallery.js"></script>
+</body>
+
+</html>

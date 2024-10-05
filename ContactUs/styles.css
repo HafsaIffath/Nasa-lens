@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-family: Dancing Script, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navbar {
+    height: 3.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.395);
+    padding: 0.6rem;
+    overflow: hidden;
+    position: fixed;
+}
+  
+.navbar img {
+    height: 2rem;
+}
+
+.navigate {
+  
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    padding-right: 100px; /* Space between buttons */
+    flex-grow: 1;
+    justify-content: center;
+}
+  
+.navigate a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #34c5ee;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+  
+.navigate a:hover{
+    color: #ffffff;
+    
+}
+
+.logo {
+    font-family: Dancing Script, sans-serif;
+    color: #34c5ee;
+    letter-spacing: 0.15rem;
+    font-weight: 800;
+}
+  
+.logo:hover {
+    letter-spacing: 0.2rem;
+}
+
+.content {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-get-in-touch {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.contact-us {
+    background: none;
+    padding: 0;
+    text-align: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.get-in-touch {
+    background: none;
+    padding: 0;
+    text-align: left;
+    width: 45%;
+    margin-left: -5%;
+    margin-right: 5%;
+}
+
+.get-in-touch h2, .contact-us h2 {
+    text-align: left;
+}
+
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.get-in-touch input, .get-in-touch textarea {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.get-in-touch .center-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #34c5ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    align-self: center;
+    margin-left: -30%;
+}
+
+.get-in-touch .center-button:hover {
+    background-color: #218838;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.social-icons a{
+    padding: 15px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.center-text {
+    text-align: left;
+}
+
+.location {
+    margin: 20px 0;
+}
+
+.location iframe {
+    width: 90%;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

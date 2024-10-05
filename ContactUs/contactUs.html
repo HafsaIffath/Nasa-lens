@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="shortcut icon" type="x-icon" href="/logo.png">
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div>
+    <video autoplay muted loop id="myVideo">
+      <source src="/bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="">
+      NASA's Lens
+    </div>
+    <div class="navigate">
+      <a href="#Home"><b>Home</b></a>
+      <a href="#favourites"><b>Favourites</b></a>
+      <a href="#images"><b>Images</b></a>
+      <a href="#feedback"><b>Feedback</b></a>
+      <a href="#contactus"><b>Contact Us</b></a>
+    </div>
+    <div class="btns">
+      <a href="">
+        <button type="button" class="btn btn-info btn-sm log">Logout</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="contact-get-in-touch">
+      <div class="contact-us" id="contactus">
+        <h2>Contact Us</h2>
+        <p class="center-text">
+          VIT-AP University <br>
+          Beside AP Secretariat <br>
+          Near Vijayawada, 522241<br>
+          Andhra Pradesh<br>
+          <span>&#9993;</span> <a href="mailto:info@vitap.ac.in">info@vitap.ac.in</a>
+        </p>
+        <p class="center-text">Phone: 9999966666</p>
+        <div class="social-icons">
+          <a href="https://whatsapp/com" target="_blank">
+            <i class="fa fa-whatsapp" style="font-size:26px; color: green;"></i>
+          </a>
+          <a href="https://github.com/your-repo" target="_blank">
+            <i class='fab fa-github' style='font-size:26px;color:white'></i>
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank">
+            <i class="fa fa-linkedin-square" style="font-size:26px"></i>
+          </a>
+        </div>
+      </div>
+      <div class="get-in-touch">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+          <button type="submit" class="center-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="location">
+      <h2>Our Location - VITAP University</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.019847634158!2d80.53732131483092!3d16.50617498862864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a2f1f62d71159%3A0x8db274e7f81c6c77!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1601282111632!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Home page
+
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/logo.png">
+
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="/bg.mp4" type="video/mp4">
+  </video>
+
+  <!--Navbar-->
+  <div class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="NASA Logo">
+      NASA's Lens
+    </div>
+    <div class="navbar-right">
+      <a href="/Favorites/fav.html">Favourites</a>
+      <a href="/Images/images.html">Images</a>
+      <a href="/FeedBack/feedback.html">Feedback</a>
+      <a href="/ContactUs/contactUs.html">Contact us</a>
+
+
+    </div>
+    <div class="logout-button">
+      <a href=""><button>Log out</button></a>
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader hidden">
+    <img src="rocket.svg" alt="loading">
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Nav bar -->
+    <div class="navigation-container">
+      <span class="background"></span>
+
+      <!-- Results Nav -->
+      <span class="navigation-items" id="resultsNav">
+        <h3 class="clickable" onclick="updateDOM('favorites')"></h3>
+        <h3 class="clickable" onclick="getNasaPics()"></h3>
+      </span>
+
+      <!-- Favorites Nav -->
+      <span class="navigation-items hidden" id="favoritesNav">
+        <h3 class="clickable" onclick="getNasaPics()">Load More NASA Images</h3>
+      </span>
+
+    </div>
+
+    <!-- Image Container -->
+    <div class="images-container">
+      <div class="card">
+        <img class="card-img-top" src="images/nasa1.jpg" alt="NASA Image 1">
+        <div class="card-body">
+          <h5 class="card-title">NASA Image 1</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/nasa2.jpg" alt="NASA Image 2">
+        <div class="card-body">
+          <h5 class="card-title">NASA Image 2</h5>
+        </div>
+      </div>
+      <!-- Repeat for each image -->
+
+      <!-- Load More Button at the end -->
+      <div class="load-more-container">
+        <button id=" ">Load More</button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- Save Confirmation (Favorites) -->
+  <div class="save-confirmed" hidden>
+    <h1>ADDED!</h1>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
