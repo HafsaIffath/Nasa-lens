@@ -58,11 +58,13 @@ function createDOMNodes(page) {
     cardTitle.textContent = result.title;
 
     //Save Text
-    const saveText = document.createElement("p");
+    const saveText = document.createElement("div");
     saveText.classList.add("clickable");
+    // saveText.classList.add("fa-regular");
+    // saveText.classList.add("fa-heart");
 
     if (page === "results") {
-      saveText.textContent = "Add To Favorites";
+      // saveText.textContent = "Add To Favorites";
       saveText.setAttribute("onclick", `saveFavorite('${result.url}')`);
     } else {
       saveText.textContent = "Remove Favorite";
