@@ -32,6 +32,7 @@ body {
   height: 2rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.395);
+  /* background-color: rgba(0, 0, 0, 1); */
   padding: 0.6rem;
   position: fixed;
   top: 0;
@@ -39,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 999;
 }
 
 /* Navbar image/logo styling */
@@ -135,6 +136,7 @@ button:hover {
   align-items: center;
   margin-top: 5px;
   margin-bottom: 25px;
+  margin-top: 2rem;
 }
 
 /* Loader */
