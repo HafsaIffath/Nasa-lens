@@ -5,7 +5,7 @@ const saveConfirmed = document.querySelector(".save-confirmed");
 const loader = document.querySelector(".loader");
 //NASA's API
 const count = 10;
-const apiKey = `fqKct6bwPz0Qn5DxUpFt87YsPgqi2irOZYsPdqVe`;
+const apiKey = `4qn4HzBycPShlBTFoQ6IrjyvmgbIceXVbHVJheL5`;
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
 
 let resultsArray = [];
@@ -118,7 +118,9 @@ async function getNasaPics() {
     updateDOM("results");
   } catch (err) {
     //Catch error
-    alert("API request failed to respond");
+    window.location.assign("/ErrorPage/demo.html");
+
+    // alert("API request failed to respond");
   }
 }
 
