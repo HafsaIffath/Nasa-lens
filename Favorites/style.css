@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: whitesmoke;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Navbar styling */
+.navbar {
+  height: 2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.395);
+  padding: 0.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Navbar image/logo styling */
+.navbar img {
+  height: 2rem; /* Set the height to ensure consistency */
+}
+
+.logo {
+  font-family: 'Dancing Script', sans-serif;
+  color: #34c5ee;
+  letter-spacing: 0.15rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* Navbar buttons alignment */
+.navbar-right {
+  
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  padding-right: 100px; /* Space between buttons */
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-right a{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  color: #34c5ee;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-right a:hover{
+  color: #ffffff;
+  
+}
+  
+
+.logout-button {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.logout-button button {
+  padding: 10px 15px;
+  background-color: #34c5ee;
+  border: none;
+  cursor: pointer;
+  
+   /* Rounded corners */
+  
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-decoration: none;
+}
+
+.logout-button a {
+  text-decoration: none; /* Remove underline from any anchor tags */
+}
+
+
+
+/* Button styling */
+button {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: #31afd2;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.505);
+  opacity: 0.8;
+  transition: background-color 0.3s ease;
+  height: 35px;
+}
+
+button:hover {
+  background-color: #29a0b8; /* Change button color on hover */
+  box-shadow: 7px 5px rgba(0, 0, 0, 0.505);
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+/* Loader */
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation */
+.navigation-container {
+  position: fixed;
+  top: 0;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  z-index: -1;
+}
+
+/* Clickable */
+.clickable {
+  color: dodgerblue;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover {
+  color: rgb(8, 72, 136);
+}
+
+/* Images Container */
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columns per row */
+  grid-gap: 20px; /* Space between grid items */
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* Card */
+/* Card */
+.card {
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Makes the body content take up remaining space */
+  justify-content: flex-start; /* Start from the top */
+  padding: 0px; /* Optional padding */
+}
+
+/* Image inside card */
+.card-img-top {
+  width: 100%;
+  height: auto; /* Allow height to adjust */
+  max-height: 500px; /* Optional max height */
+  object-fit: cover;
+  border: none;
+  margin: 0;
+  padding: 0; /* Ensures the image covers the card without stretching */
+}
+
+/* Card body */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Align contents vertically */
+  justify-content: flex-start; /* Start from the top */
+  align-items: center; /* Center align contents */
+  flex-grow: 1; /* Allows body to take remaining space */
+  overflow: auto; /* Enables scrolling if content exceeds card height */
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0; /* Adjust top and bottom margin */
+}
+
+/* Save Text (Add/Remove to/from favorites) */
+.clickable {
+  color: dodgerblue;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  margin-top: 10px; /* Adds some space above the clickable text */
+}
+
+
+/* Save Text (Add/Remove to/from favorites) */
+.clickable {
+  color: dodgerblue;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+
+.clickable:hover {
+  color: rgb(8, 72, 136);
+}
+
+/* Responsive: Large Smartphones and Tablets */
+@media screen and (max-width: 1024px) {
+  .images-container {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+/* Responsive: Small Screens */
+@media screen and (max-width: 600px) {
+  .images-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
+  }
+}
+
+/* Save Confirmation */
+.save-confirmed {
+  background: white;
+  color: dodgerblue;
+  padding: 8px 16px;
+  border-radius: 13px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.487);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#loadMoreBtn {
+  padding: 10px 15px;
+  background-color: #34c5ee;
+  border: none;
+  cursor: pointer;
+
+  /* Rounded corners */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-decoration: none;
+  color : black;
+  border-radius: 5px; /* Same rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.505);
+  transition: background-color 0.3s ease;
+}
+
+#loadMoreBtn:hover {
+  background-color:#29a0b8 ;
+}
+
+
+
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 800px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}
