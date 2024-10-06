@@ -64,7 +64,7 @@ function createDOMNodes(page) {
     // saveText.classList.add("fa-heart");
 
     if (page === "results") {
-      // saveText.textContent = "Add To Favorites";
+      saveText.textContent = "Add To Favorites";
       saveText.setAttribute("onclick", `saveFavorite('${result.url}')`);
     } else {
       saveText.textContent = "Remove Favorite";
@@ -141,7 +141,9 @@ function saveFavorite(itemUrl) {
       }, 2000);
 
       // Change "Add to Favorites" to "Remove Favorite" for this item
-      const saveButton = document.querySelector(`[onclick="saveFavorite('${itemUrl}')"]`);
+      const saveButton = document.querySelector(
+        `[onclick="saveFavorite('${itemUrl}')"]`
+      );
       if (saveButton) {
         saveButton.textContent = "Remove Favorite";
         saveButton.setAttribute("onclick", `removeFavorite('${itemUrl}')`);
@@ -149,7 +151,6 @@ function saveFavorite(itemUrl) {
     }
   });
 }
-
 
 //Remove items from favorites
 function removeFavorite(itemUrl) {
@@ -160,7 +161,9 @@ function removeFavorite(itemUrl) {
     localStorage.setItem("nasaFavorites", JSON.stringify(favorites));
 
     // Update the DOM to change "Remove Favorite" back to "Add to Favorites"
-    const saveButton = document.querySelector(`[onclick="removeFavorite('${itemUrl}')"]`);
+    const saveButton = document.querySelector(
+      `[onclick="removeFavorite('${itemUrl}')"]`
+    );
     if (saveButton) {
       saveButton.textContent = "Add To Favorites";
       saveButton.setAttribute("onclick", `saveFavorite('${itemUrl}')`);
