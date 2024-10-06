@@ -118,7 +118,7 @@ async function getNasaPics() {
     updateDOM("results");
   } catch (err) {
     //Catch error
-    window.location.assign("/ErrorPage/demo.html");
+    window.location.assign("/ErrorPage/error.html");
 
     // alert("API request failed to respond");
   }
