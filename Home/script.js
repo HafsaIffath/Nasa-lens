@@ -125,32 +125,48 @@ async function getNasaPics() {
 }
 
 //Add result to Favories
+//Add result to Favories
 function saveFavorite(itemUrl) {
-  //loop through Results array to select favorite
   resultsArray.forEach((item) => {
     if (item.url.includes(itemUrl) && !favorites[itemUrl]) {
       favorites[itemUrl] = item;
 
-      //Show Save Confirmation for 2 seconds
+      // Update localStorage with new favorites
+      localStorage.setItem("nasaFavorites", JSON.stringify(favorites));
+
+      // Show Save Confirmation for 2 seconds
       saveConfirmed.hidden = false;
       setTimeout(() => {
         saveConfirmed.hidden = true;
       }, 2000);
 
-      //Set Favorites in localStorage
-      localStorage.setItem("nasaFavorites", JSON.stringify(favorites));
+      // Change "Add to Favorites" to "Remove Favorite" for this item
+      const saveButton = document.querySelector(`[onclick="saveFavorite('${itemUrl}')"]`);
+      if (saveButton) {
+        saveButton.textContent = "Remove Favorite";
+        saveButton.setAttribute("onclick", `removeFavorite('${itemUrl}')`);
+      }
     }
   });
 }
+
 
 //Remove items from favorites
 function removeFavorite(itemUrl) {
   if (favorites[itemUrl]) {
     delete favorites[itemUrl];
 
-    //Remove it from local storage
+    // Update localStorage after removing the favorite
     localStorage.setItem("nasaFavorites", JSON.stringify(favorites));
-    updateDOM("favorites");
+
+    // Update the DOM to change "Remove Favorite" back to "Add to Favorites"
+    const saveButton = document.querySelector(`[onclick="removeFavorite('${itemUrl}')"]`);
+    if (saveButton) {
+      saveButton.textContent = "Add To Favorites";
+      saveButton.setAttribute("onclick", `saveFavorite('${itemUrl}')`);
+    }
+
+    updateDOM("favorites"); // Refresh Favorites section if displayed
   }
 }
 //On Load Call getNasaPics
