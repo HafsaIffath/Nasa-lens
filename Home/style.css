@@ -318,13 +318,13 @@ button:hover {
   display: none;
 }
 
-.load-more-container {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
+/* Load more btn */
+.loadmore {
+  height: 4rem;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 #loadMoreBtn {

@@ -3,6 +3,8 @@ const favoritesNav = document.getElementById("favoritesNav");
 const imagesContainer = document.querySelector(".images-container");
 const saveConfirmed = document.querySelector(".save-confirmed");
 const loader = document.querySelector(".loader");
+const loadBtnContainer = document.querySelector(".loadmore");
+const loadBtn = document.querySelector(".btn-load");
 //NASA's API
 const count = 10;
 const apiKey = `4qn4HzBycPShlBTFoQ6IrjyvmgbIceXVbHVJheL5`;
@@ -24,6 +26,7 @@ function showContent(page) {
     favoritesNav.classList.remove("hidden");
   }
   loader.classList.add("hidden");
+  loadBtnContainer.classList.remove("hidden");
 }
 
 function createDOMNodes(page) {
@@ -172,5 +175,8 @@ function removeFavorite(itemUrl) {
     updateDOM("favorites"); // Refresh Favorites section if displayed
   }
 }
+
+loadBtn.addEventListener("click", getNasaPics);
+
 //On Load Call getNasaPics
 getNasaPics();

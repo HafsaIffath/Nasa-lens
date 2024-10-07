@@ -209,14 +209,6 @@ button:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
-/* Load more btn */
-.loadmore {
-  height: 4rem;
-  width: 7rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
