@@ -15,7 +15,7 @@
     <source src="/Utils/bg.mp4" type="video/mp4">
   </video>
 
-  <!-- Navigation Bar -->
+  <!--Navbar-->
   <div class="navbar">
     <a href="/Home/home.html" style="color:#34c5ee; text-decoration: none;">
       <div class="logo">
@@ -24,17 +24,30 @@
       </div>
     </a>
     <div class="navbar-right">
+      <a href="/Favorites/favorites.html">Favourites</a>
+      <a href="/Images/images.html">Images</a>
+      <a href="/FeedBack/feedback.html">Feedback</a>
+      <a href="/ContactUs/contactUs.html">Contact us</a>
 
-      <a href="signup.html"><button>Logout</button></a>
+
+    </div>
+    <div class="logout-button">
+      <a href="/index.html"><button style="background-color: #0D6EFD;">Log out</button></a>
     </div>
   </div>
+
+  <!-- Loader -->
+  <div class="loader hidden">
+    <img src="/Home/rocket.svg" alt="loading">
+  </div>
+
 
   <!-- Image Gallery Container -->
   <div class="gallery-container">
     <h2> Image Gallery</h2>
     <div class="gallery">
       <!-- Repeat this block for each image -->
-      <div class="gallery-item">
+      <!-- <div class="gallery-item">
         <img src="image.jpeg">
       </div>
       <div class="gallery-item">
@@ -72,7 +85,7 @@
       </div>
       <div class="gallery-item">
         <img src="image.jpeg">
-      </div>
+      </div> -->
 
       <!-- Add more images as needed -->
     </div>
@@ -87,6 +100,7 @@
 
   <!-- Optional: Include JavaScript for Lightbox Functionality -->
   <script src="gallery.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
