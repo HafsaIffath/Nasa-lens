@@ -98,13 +98,14 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px;
   margin-bottom: 20px;
   border: 1px solid #444;
   border-radius: 5px;
   background-color: #333;
   color: #fff;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 /* Proper label alignment */
@@ -115,36 +116,47 @@ label {
   text-align: left;
 }
 
-/* Error message styling */
 .error-message {
-  font-size: 0.6rem; /* Small font size */
+  font-size: 0.6rem; 
   color: red;
-  text-align: left; /* Left-align the error message */
-  display: block; /* Ensure it is displayed as a block */
-  margin-top: -10px; /* Adjust to ensure the spacing is consistent */
+  text-align: left;
+  display: block; 
+  margin-top: -10px; 
   margin-bottom: 10px; /* Ensure space below the error */
 }
 
-/* Container styling */
+
 .container {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  min-width: 300px; /* Set minimum width to ensure consistency */
-  max-width: 400px; /* Set a fixed max-width to maintain consistency */
+  min-width: 250px; 
+  max-width: 300px; 
+  width: 100%; 
+ 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 7.5rem;
-  align-items: center;
-  justify-content: center;
-  font-size: small;
-  
+}
+
+/* Center the login container */
+.page-login .container {
+  margin: 0; 
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; 
+  align-items: center; 
+  min-height: 300px; 
+}
+
+.page-signup .container {
+  margin-top: 18rem; 
 }
 
 /* Headings */
 h2 {
   color: #34c5ee;
   margin-bottom: 20px;
+  margin-top: 0; 
 }
 
 /* Paragraph styling */
@@ -164,16 +176,16 @@ a:hover {
 }
 
 /* Logic for hiding specific buttons on the respective pages */
-.page-signup .navbar a[href="signup.html"] {
+.page-signup .navbar a[href='signup.html'] {
   display: none;
 }
 
-.page-login .navbar a[href="index.html"] {
+.page-login .navbar a[href='index.html'] {
   display: none;
 }
 
 /* Reset link styling */
-a[href^="#"]:hover {
+a[href^='#']:hover {
   text-decoration: underline;
   color: #fff;
 }
