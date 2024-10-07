@@ -83,15 +83,6 @@ body {
   color: #ffffff;
 }
 
-.button-container {
-  display: flex;
-  gap: 10px;                 
-  justify-content: center;   /* Horizontally centers buttons within the container */
-  align-items: center;       
-  position: relative;   
-            
-}
-
 .logout-button {
   margin-left: auto;
   margin-right: 20px;
@@ -115,28 +106,9 @@ body {
   text-decoration: none; /* Remove underline from any anchor tags */
 }
 
-.loadMoreBtn {
-  margin-left: auto;
-}
-.loadMoreBtn button {
-  padding: 10px 15px;
-  background-color: #34c5ee;
-  border: none;
-  cursor: pointer;
-  justify-content: center;    /* Center the text inside the button horizontally */
-  align-items: center;
-  
-  display: flex; 
-  text-decoration: none;
-}
-
-.loadMoreBtn a {
-  text-decoration: none; /* Remove underline from any anchor tags */
-}
-
 /* Button styling */
 button {
-  
+  width: 100%;
   color: rgb(0, 0, 0);
   background-color: #31afd2;
   border: none;
@@ -148,24 +120,13 @@ button {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.505);
   opacity: 0.8;
   transition: background-color 0.3s ease;
-  
+  height: 35px;
 }
 
 button:hover {
   background-color: #29a0b8; /* Change button color on hover */
   box-shadow: 7px 5px rgba(0, 0, 0, 0.505);
   opacity: 1;
-}
-
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  margin-top: 2rem;
-  gap: 10px;
 }
 
 /* Loader */
