@@ -140,36 +140,6 @@ button:hover {
   align-items: center;
 }
 
-/* Navigation */
-.navigation-container {
-  position: fixed;
-  top: 0;
-}
-
-.navigation-items {
-  display: flex;
-  justify-content: center;
-}
-
-.background {
-  position: fixed;
-  right: 0;
-  width: 100%;
-  height: 60px;
-  z-index: -1;
-}
-
-/* Clickable */
-.clickable {
-  color: dodgerblue;
-  cursor: pointer;
-  user-select: none;
-}
-
-.clickable:hover {
-  color: rgb(8, 72, 136);
-}
-
 /* Images Container */
 .images-container {
   display: grid;
@@ -183,7 +153,6 @@ button:hover {
   margin: 50px auto;
 }
 
-/* Card */
 /* Card */
 .card {
   background: black;

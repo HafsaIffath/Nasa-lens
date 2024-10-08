@@ -1,4 +1,3 @@
-const resultsNav = document.getElementById("resultsNav");
 const favoritesNav = document.getElementById("favoritesNav");
 const imagesContainer = document.querySelector(".images-container");
 const saveConfirmed = document.querySelector(".save-confirmed");
@@ -18,13 +17,7 @@ function showContent(page) {
     top: 0,
     behavior: "instant",
   });
-  if (page === "results") {
-    resultsNav.classList.remove("hidden");
-    favoritesNav.classList.add("hidden");
-  } else {
-    resultsNav.classList.add("hidden");
-    favoritesNav.classList.remove("hidden");
-  }
+
   loader.classList.add("hidden");
   loadBtnContainer.classList.remove("hidden");
 }
