@@ -23,12 +23,23 @@ function createDOMNodes(page) {
   const currentArray = resultsArray;
   currentArray.forEach((result) => {
     const gallary_item = document.createElement("div");
+
+    // Link
+    const link = document.createElement("a");
+    link.href = result.hdurl;
+    link.title = "View Full Image";
+    link.target = "_blank";
+
+    //img
     const img = document.createElement("img");
     img.src = result.url;
     img.alt = "NASA Picture of the Day";
     img.loading = "lazy";
+
     gallary_item.classList.add("gallery-item");
-    gallary_item.appendChild(img);
+    link.appendChild(img);
+    gallary_item.appendChild(link);
+    // gallary_item.appendChild(img);
     gallery.appendChild(gallary_item);
   });
 }
