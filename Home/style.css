@@ -293,6 +293,8 @@ button:hover {
 
   .images-container {
     width: 100%;
+    margin: 10px 10px;
+    padding: 10px 10px;
   }
 
   .save-confirmed {
@@ -301,5 +303,9 @@ button:hover {
 
   .card-title {
     font-size: 20px;
+  }
+
+  .card-body {
+    font-size: 0.8rem;
   }
 }
