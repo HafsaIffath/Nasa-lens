@@ -86,6 +86,8 @@ body {
 .logout-button {
   margin-left: auto;
   margin-right: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logout-button button {
@@ -173,7 +175,8 @@ button:hover {
   margin-right: 5%;
 }
 
-.get-in-touch h2, .contact-us h2 {
+.get-in-touch h2,
+.contact-us h2 {
   text-align: left;
 }
 
@@ -187,7 +190,8 @@ button:hover {
   font-weight: bold;
 }
 
-.get-in-touch input, .get-in-touch textarea {
+.get-in-touch input,
+.get-in-touch textarea {
   margin: 5px 0;
   padding: 10px;
   font-size: 16px;
@@ -209,8 +213,12 @@ button:hover {
   color: #f4f4f4;
 }
 
-.center-button:hover{
-  background-color: #0D6EFD;
+.center-button {
+  align-items: center;
+  justify-content: center;
+}
+.center-button:hover {
+  background-color: #0d6efd;
 }
 
 .social-icons {
@@ -219,7 +227,7 @@ button:hover {
   margin-top: 10px;
 }
 
-.social-icons a{
+.social-icons a {
   padding: 15px;
 }
 .social-icons img {
@@ -238,7 +246,6 @@ button:hover {
   color: #f4f4f4;
 }
 
-
 .location iframe {
   width: 90%;
   border: 0;
@@ -249,4 +256,3 @@ button:hover {
 .hidden {
   display: none;
 }
-
