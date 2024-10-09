@@ -143,11 +143,11 @@ button:hover {
 /* Images Container */
 .images-container {
   display: grid;
-  grid-template-columns: 1fr; /* 1 columns per row */
+  grid-template-columns: 1fr 1fr; /* 1 columns per row */
   grid-gap: 20px; /* Space between grid items */
   width: 100%;
-  max-width: 800px;
-  padding: 20px;
+  /* max-width: 800px; */
+  padding: 4rem;
   box-sizing: border-box;
   justify-content: center;
   margin: 50px auto;
@@ -155,7 +155,8 @@ button:hover {
 
 /* Card */
 .card {
-  background: black;
+  background: rgba(0, 0, 0, 0.773);
+  /* background-color: rgba(43, 38, 38, 0.743); */
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -181,6 +182,7 @@ button:hover {
 
 /* Card body */
 .card-body {
+  font-size: 1.2rem;
   padding: 15px;
   display: flex;
   flex-direction: column; /* Align contents vertically */
@@ -243,6 +245,7 @@ button:hover {
   position: fixed;
   bottom: 25px;
   right: 50px;
+  z-index: 20;
 }
 
 /* Hidden class */
