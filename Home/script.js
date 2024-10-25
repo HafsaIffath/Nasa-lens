@@ -173,3 +173,4 @@ loadBtn.addEventListener("click", getNasaPics);
 
 //On Load Call getNasaPics
 getNasaPics();
+

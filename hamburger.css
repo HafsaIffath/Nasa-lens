@@ -1,0 +1,60 @@
+/* Hamburger */
+
+.ham {
+  background: none;
+}
+
+.ham:hover {
+  background: none;
+}
+
+.hamnav {
+  display: block;
+
+  margin-left: 10px !important;
+  margin-top: 4rem;
+}
+
+#hamId {
+  margin-right: 0px;
+  padding-right: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px !important;
+  padding-bottom: 10px;
+  /* background-color: rgba(0, 0, 0, 0.395); */
+  position: block;
+  width: 100%;
+  margin-right: 0%;
+  text-decoration: none;
+}
+
+ul li:hover {
+  background-color: rgba(0, 0, 0, 0.395);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+  /* .navbar.open  */
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .hamburger {
+    display: none;
+  }
+  #hamId {
+    display: none;
+  }
+}

@@ -6,23 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feedback form - NASA's Lens</title>
   <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" href="/Utils/logo.png">
 
 </head>
 
-<body class="page-Feedback">
+<body>
   <video autoplay muted loop id="myVideo">
     <source src="/Utils/bg.mp4" type="video/mp4">
   </video>
 
+  <!--Navbar-->
+
   <div class="navbar">
+    <div class="hamburger">
+      <button id="hamburger-toggle" class="ham"><i class="fa-solid fa-bars"></i></button>
+
+    </div>
     <a href="/Home/home.html" style="color:#34c5ee; text-decoration: none;">
       <div class="logo">
         <img src="/Utils/logo.png" alt="NASA Logo">
         NASA's Lens
       </div>
     </a>
-    <div class="navbar-right">
+
+    <div class="navbar-right nav-toggle">
       <a href="/Favorites/favorites.html">Favourites</a>
       <a href="/Images/images.html">Images</a>
       <a href="/FeedBack/feedback.html">Feedback</a>
@@ -30,12 +38,36 @@
 
 
     </div>
+
+
     <div class="logout-button">
       <a href="/index.html"><button style="background-color: #0D6EFD;">Log out</button></a>
     </div>
   </div>
 
-  <div class="container">
+  <div id="hamId" class="navbar-right hamnav " style="display: none;">
+    <ul>
+      <li>
+        <a href="/Favorites/favorites.html">Favourites</a>
+
+      </li>
+      <li>
+        <a href="/Images/images.html">Images</a>
+
+      </li>
+      <li>
+        <a href="/FeedBack/feedback.html">Feedback</a>
+
+      </li>
+      <li> <a href="/ContactUs/contactUs.html">Contact us</a>
+      </li>
+
+    </ul>
+
+
+  </div>
+
+  <div class="container page-Feedback">
     <h2>Feedback</h2>
     <form id="Feedback form" action="/Home/home.html">
       <label for="Name">Name</label>
@@ -73,6 +105,11 @@
   </div>
 
   <i class="fa fa-star-o" aria-hidden="true"></i>
+
+  </div>
+
+  <script src="/hamburgerScrip.js"></script>
+
 </body>
 
 </html>

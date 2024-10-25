@@ -335,6 +335,8 @@ button:hover {
     line-height: 1.4rem;
     font-size: 0.9rem;
     text-align: justify;
+    margin-top: 2.5rem;
+    padding: 12px;
   }
 
   .images-container {
@@ -357,4 +359,53 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+
+
+/* Hamburger */
+
+.ham {
+  background: none;
+}
+
+.ham:hover {
+  background: none;
+}
+
+.hamnav {
+  display: block;
+
+  margin-left: 10px !important;
+  margin-top: 4rem;
+}
+
+#hamId {
+  margin-right: 0px;
+  padding-right: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px !important;
+  padding-bottom: 10px;
+  /* background-color: rgba(0, 0, 0, 0.395); */
+  position: block;
+  width: 100%;
+  margin-right: 0%;
+}
+
+ul li:hover {
+  background-color: rgba(0, 0, 0, 0.395);
+}
+
+@media screen and (max-width: 850px) {
+  /* .navbar.open  */
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .hamburger {
+    display: none;
+  }
 }

@@ -17,9 +17,7 @@ html {
   align-items: center;
   font-size: 30px;
   text-align: left;
-  
 }
-
 
 .stars input {
   display: none; /* Hide radio buttons */
@@ -40,7 +38,6 @@ html {
 .stars label:hover ~ label {
   color: gold;
 }
-
 
 body {
   margin: 0;
@@ -165,14 +162,12 @@ button:hover {
   opacity: 1;
 }
 
-
-
 /* Input fields */
 input[type="text"],
 input[type="Name"],
 input[type="Email"],
 input[type="Rating"],
-input[type="Comments"]{
+input[type="Comments"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -212,55 +207,55 @@ label {
   text-align: center;
   margin-top: 7rem;
   /* position:fixed; */
-  top:2rem;
+  top: 2rem;
   /* height:70%; */
 }
-.i{
+.i {
   color: #eeb712;
 }
 /* Star Rating Styles */
 .star-rating {
-    direction: rtl;
-    display: flex;
-    justify-content: flex-start;
-    gap:40px;
-    margin-bottom: 25px;
+  direction: rtl;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-bottom: 25px;
 }
 
 .star-rating input {
-    display: none;
+  display: none;
 }
 
 .star-rating label {
-    font-size:30px;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.2s;
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .star-rating input:checked ~ label,
 .star-rating label:hover,
 .star-rating label:hover ~ label {
-    color: #eeb712;
+  color: #eeb712;
 }
 
 /* Ensure the form stays on top of the video */
 .content {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 textarea {
-    height: 150px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    box-sizing: border-box;
-
+  height: 150px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
 /* Headings */
 h2 {
   color: #34c5ee;
@@ -284,20 +279,64 @@ a:hover {
 }
 
 /* Logic for hiding specific buttons on the respective pages */
-.page-signup .navbar a[href='signup.html'] {
+.page-signup .navbar a[href="signup.html"] {
   display: none;
 }
 
-.page-login .navbar a[href='index.html'] {
+.page-login .navbar a[href="index.html"] {
   display: none;
 }
 
-  
-  
+/* Hamburger */
 
+.ham {
+  background: none;
+}
 
-  
-    
+.ham:hover {
+  background: none;
+}
 
+.hamnav {
+  display: block;
 
-  
+  margin-left: 10px !important;
+  margin-top: 4rem;
+}
+
+#hamId {
+  position: absolute;
+  margin-right: 0px;
+  padding-right: 0;
+  top: 10px;
+  left: 10px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px !important;
+  padding-bottom: 10px;
+  /* background-color: rgba(0, 0, 0, 0.395); */
+  position: block;
+  width: 100%;
+  margin-right: 0%;
+}
+
+ul li:hover {
+  background-color: rgba(0, 0, 0, 0.395);
+}
+
+@media screen and (max-width: 850px) {
+  /* .navbar.open  */
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .hamburger {
+    display: none;
+  }
+  #hamId {
+    display: none;
+  }
+}
