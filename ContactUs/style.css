@@ -260,10 +260,24 @@ button:hover {
       flex-direction: column; /* Stacks the divs vertically */
       align-items: center;
       margin-left: 25%;
+      margin-right: 25%;
   }
-  .contact-us, .get-in-touch {
+  .contact-us {
       width: 100%; /* Full width on mobile */
       margin-bottom: 10px; /* Adds spacing between the sections */
       margin-left: 15px;
+  }
+
+  .get-in-touch{
+      width: 150%; /* Full width on mobile */
+      margin-bottom: 10px; /* Adds spacing between the sections */
+      margin-left: 15px;
+  }
+
+  .get-in-touch h2{
+    text-align: center;
+  }
+  .get-in-touch input, .get-in-touch textarea{
+    width: 100%;
   }
 }
