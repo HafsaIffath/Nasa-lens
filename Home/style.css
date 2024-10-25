@@ -156,7 +156,6 @@ button:hover {
 /* Card */
 .card {
   background: rgba(0, 0, 0, 0.773);
-  /* background-color: rgba(43, 38, 38, 0.743); */
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

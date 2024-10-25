@@ -194,8 +194,6 @@ button:hover {
 /* Card */
 .card {
   background: rgba(0, 0, 0, 0.773);
-  color: white;
-  z-index: 1;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -203,9 +201,10 @@ button:hover {
   display: flex;
   flex-direction: column; /* Makes the body content take up remaining space */
   justify-content: flex-start; /* Start from the top */
-  padding: 0px; /* Optional padding */
+  padding: 0px;
+  color: white;
+  z-index: 1;
 }
-
 /* Image inside card */
 .card-img-top {
   width: 100%;
@@ -300,6 +299,15 @@ button:hover {
   z-index: 999;
 }
 
+/* Load more btn */
+.loadmore {
+  height: 4rem;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 #loadMoreBtn {
   padding: 10px 15px;
   background-color: #34c5ee;
@@ -331,6 +339,8 @@ button:hover {
 
   .images-container {
     width: 100%;
+    margin: 10px 10px;
+    padding: 10px 10px;
   }
 
   .save-confirmed {
@@ -339,6 +349,9 @@ button:hover {
 
   .card-title {
     font-size: 20px;
+  }
+  .card-body {
+    font-size: 0.8rem;
   }
 }
 
