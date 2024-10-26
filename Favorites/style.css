@@ -184,10 +184,11 @@ button:hover {
   grid-gap: 20px; /* Space between grid items */
   width: 100%;
   /* max-width: 800px; */
-  /* padding: 4rem; */
+  padding: 4rem;
   box-sizing: border-box;
   justify-content: center;
   margin: 50px auto;
+  padding-top: 0;
 }
 
 /* Card */

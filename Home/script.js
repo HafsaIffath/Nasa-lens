@@ -165,7 +165,7 @@ function removeFavorite(itemUrl) {
       saveButton.setAttribute("onclick", `saveFavorite('${itemUrl}')`);
     }
 
-    updateDOM("favorites"); // Refresh Favorites section if displayed
+    // updateDOM("favorites"); // Refresh Favorites section if displayed
   }
 }
 
@@ -173,4 +173,3 @@ loadBtn.addEventListener("click", getNasaPics);
 
 //On Load Call getNasaPics
 getNasaPics();
-
